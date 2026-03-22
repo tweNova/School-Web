@@ -15,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 20%;
 
-    --primary: 168 78% 24%;
+    --primary: 210 85% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 40 93% 56%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 45 100% 50%;
+    --secondary-foreground: 220 20% 20%;
 
     --muted: 210 20% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 168 78% 24%;
+    --accent: 210 85% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -32,7 +32,7 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 168 78% 24%;
+    --ring: 210 85% 45%;
 
     --radius: 0.5rem;
 
@@ -58,10 +58,10 @@
     --card-foreground: 210 40% 98%;
     --popover: 220 26% 14%;
     --popover-foreground: 210 40% 98%;
-    --primary: 168 78% 34%;
+    --primary: 210 85% 55%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 40 93% 56%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 45 100% 50%;
+    --secondary-foreground: 220 26% 14%;
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
     --accent: 217 33% 17%;
@@ -114,10 +114,10 @@
   }
 
   .cta-gradient {
-    background: linear-gradient(135deg, hsl(var(--primary)), hsl(168 78% 18%));
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(210 85% 35%));
   }
 
   .counter-bg {
-    background: linear-gradient(135deg, hsl(var(--primary)), hsl(168 78% 18%));
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(210 85% 35%));
   }
 }

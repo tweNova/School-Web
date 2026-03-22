@@ -11,29 +11,27 @@ const HeroSection = () => {
       <div className="hero-overlay absolute inset-0" />
       <div className="container relative z-10">
         <div className="max-w-2xl">
-          <span className="inline-block text-secondary text-sm font-semibold uppercase tracking-[3px] mb-4 border-b-2 border-secondary pb-1">
-            Welcome To Rose Merry Model Public School!
+          <span className="inline-block bg-secondary text-secondary-foreground text-sm font-bold uppercase tracking-[2px] mb-4 px-4 py-1.5 rounded-full shadow-lg">
+            🎉 Session starts from January 2026 - Free Admission!
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 font-heading">
-            Start Your Beautiful And{" "}
-            <span className="text-secondary italic">Bright</span> Future
+            Welcome To Rose Merry Model <span className="text-secondary italic">Public School</span>
           </h1>
-          <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl">
-            CBSE Board Class 1-12.in. Empowering minds and shaping futures through quality education,
-            innovative teaching, and a supportive learning environment.
+          <p className="text-primary-foreground/90 text-lg md:text-xl font-medium mb-8 max-w-xl bg-dark/30 p-2 rounded">
+            Free admission for Nursery, LKG, and UKG! Empowering minds and shaping futures through quality CBSE & WB Board education.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <a
-              href="#about"
-              className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-7 py-3 rounded-md font-semibold hover:bg-secondary/90 transition-colors"
-            >
-              ABOUT MORE <ArrowRight className="w-4 h-4" />
-            </a>
+          <div className="flex flex-wrap gap-4 mt-2">
             <a
               href="#courses"
-              className="inline-flex items-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-7 py-3 rounded-md font-semibold hover:bg-primary-foreground/10 transition-colors"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold shadow-lg shadow-primary/30 hover:bg-primary/90 hover:scale-105 transition-all"
             >
-              LEARN MORE <ArrowRight className="w-4 h-4" />
+              APPLY NOW <ArrowRight className="w-5 h-5" />
+            </a>
+            <a
+              href="#about"
+              className="inline-flex items-center gap-2 bg-white text-dark px-8 py-4 rounded-full font-bold shadow-lg hover:bg-white/90 hover:scale-105 transition-all"
+            >
+              ABOUT US
             </a>
           </div>
         </div>

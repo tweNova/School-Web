@@ -20,16 +20,16 @@ const TopBar = () => {
         </div>
         <div className="hidden md:flex items-center gap-6 text-sm">
           <span className="flex items-center gap-1.5">
+            <Phone className="w-3.5 h-3.5 text-primary" />
+            Director: 9932239526 / Office: 9932010253
+          </span>
+          <span className="flex items-center gap-1.5">
             <MapPin className="w-3.5 h-3.5 text-primary" />
-            Islampur, uttar dinajpur , westbengal, india
+            Near Ramganj Bus Stand, Vill+PO Ramganj, Uttar Dinajpur
           </span>
           <span className="flex items-center gap-1.5">
             <Mail className="w-3.5 h-3.5 text-primary" />
-            rosemerrymodelpublicschool@gmail.com
-          </span>
-          <span className="flex items-center gap-1.5">
-            <Phone className="w-3.5 h-3.5 text-primary" />
-            +919932239526
+            rosemary2025ramganj@gmail.com
           </span>
         </div>
       </div>

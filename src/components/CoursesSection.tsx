@@ -4,9 +4,8 @@ import course2 from "@/assets/course-2.jpg";
 import course3 from "@/assets/course-3.jpg";
 
 const courses = [
-  { img: course1, category: "Drama", title: "Acting And Drama", lessons: 10, rating: 4.0, seats: 75, years: 4, price: 750 },
-  { img: course2, category: "Design", title: "Art And Design", lessons: 10, rating: 4.0, seats: 75, years: 4, price: 750 },
-  { img: course3, category: "Science", title: "Biology And Conservation", lessons: 10, rating: 4.0, seats: 75, years: 4, price: 750 },
+  { img: course1, category: "Foundation", title: "Nursery to Class IV", lessons: "All Subjects", rating: 5.0, seats: "Open", years: "CBSE Pattern", price: "Free Admission" },
+  { img: course2, category: "Secondary", title: "Class V to X", lessons: "All Subjects", rating: 4.8, seats: "Limited", years: "WBBSE Board", price: "Contact Us" },
 ];
 
 const CoursesSection = () => {
@@ -14,15 +13,14 @@ const CoursesSection = () => {
     <section id="courses" className="py-20 bg-section-bg">
       <div className="container">
         <div className="text-center mb-12">
-          <span className="section-title">Our Courses</span>
-          <h2 className="section-heading">Let's Check Our Courses</h2>
+          <span className="section-title">Classes Offered</span>
+          <h2 className="section-heading">Our Academic Structure</h2>
           <p className="section-desc">
-            Explore our wide range of courses designed to help you achieve your academic
-            and career goals.
+            We offer a comprehensive academic progression from early childhood through secondary education, ensuring a seamless and enriching learning journey.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {courses.map((c, i) => (
             <div key={i} className="bg-background rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
               <div className="relative">
@@ -44,16 +42,16 @@ const CoursesSection = () => {
                   {c.title}
                 </h4>
                 <p className="text-muted-foreground text-sm mb-4">
-                  Comprehensive curriculum with hands-on projects and expert mentorship.
+                  Comprehensive curriculum with hands-on projects and expert mentorship following the {c.years}.
                 </p>
                 <div className="flex items-center justify-between pt-4 border-t border-border">
                   <div className="flex gap-4 text-xs text-muted-foreground">
                     <span className="flex items-center gap-1">
-                      <Users className="w-3.5 h-3.5" /> {c.seats} Seats
+                      <Users className="w-3.5 h-3.5" /> {c.seats}
                     </span>
-                    <span>0{c.years} Years</span>
+                    <span className="font-bold text-dark">{c.years}</span>
                   </div>
-                  <span className="text-lg font-bold text-primary">${c.price}</span>
+                  <span className="text-base font-bold text-secondary bg-secondary/10 px-3 py-1 rounded">{c.price}</span>
                 </div>
               </div>
             </div>

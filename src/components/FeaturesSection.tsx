@@ -1,18 +1,24 @@
-import { GraduationCap, Users, BookOpen, DollarSign } from "lucide-react";
+import { GraduationCap, Building, Home, Video, Bus, MessageCircle, Monitor, ClipboardList, Heart, Award } from "lucide-react";
 
-const features = [
-  { icon: DollarSign, number: "01", title: "Scholarship Facility", desc: "Providing financial assistance to deserving students for their academic journey." },
-  { icon: Users, number: "02", title: "Skilled Lecturers", desc: "Learn from experienced and highly qualified professors and mentors." },
-  { icon: BookOpen, number: "03", title: "Book Library Facility", desc: "Access thousands of books and digital resources in our modern library." },
-  { icon: DollarSign, number: "04", title: "Affordable Price", desc: "Quality education at competitive prices with flexible payment options." },
+const facilities = [
+  { icon: GraduationCap, title: "Experienced Teachers", desc: "Trained faculty members." },
+  { icon: Building, title: "Day Scholar & Boarding", desc: "Flexible attendance options." },
+  { icon: Home, title: "Separate Hostels", desc: "Safe accommodation for boys and girls." },
+  { icon: Video, title: "CCTV Surveillance", desc: "24/7 security for student safety." },
+  { icon: Bus, title: "Transport Facility", desc: "Convenient travel options available." },
+  { icon: MessageCircle, title: "Spoken English", desc: "Specialized language training." },
+  { icon: Monitor, title: "Computer Education", desc: "Basic and advanced IT skills." },
+  { icon: ClipboardList, title: "Monthly Tests", desc: "Regular progress tracking." },
+  { icon: Heart, title: "Support for Weak Students", desc: "Extra care and remedial classes." },
+  { icon: Award, title: "Scholarships", desc: "Concessions for meritorious and needy." },
 ];
 
 const FeaturesSection = () => {
   return (
-    <section className="relative -mt-16 z-20">
+    <section id="facilities" className="relative -mt-16 z-20">
       <div className="container">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((f, i) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {facilities.map((f, i) => (
             <div
               key={i}
               className="bg-background rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow group"
@@ -21,12 +27,9 @@ const FeaturesSection = () => {
                 <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                   <f.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
-                <span className="text-4xl font-bold text-muted-foreground/20 font-heading">
-                  {f.number}
-                </span>
               </div>
-              <h4 className="text-lg font-bold mb-2">{f.title}</h4>
-              <p className="text-muted-foreground text-sm">{f.desc}</p>
+              <h4 className="text-base font-bold mb-1">{f.title}</h4>
+              <p className="text-muted-foreground text-xs">{f.desc}</p>
             </div>
           ))}
         </div>

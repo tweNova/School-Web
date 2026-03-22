@@ -26,12 +26,15 @@ const AboutSection = () => {
           {/* Content */}
           <div>
             <span className="section-title">About Us</span>
-            <h2 className="section-heading">Our Education System Inspires You More.</h2>
-            <p className="text-muted-foreground mb-6">
-              Run by Dishari Educational Welfare Foundation (Govt. Reg. No 1901-00189/2025). 
-              We provide comprehensive education programs from Nursery to Class X designed to nurture talent,
-              build character, and prepare students for a successful future.
-            </p>
+            <h2 className="section-heading">Welcome to Rosemary Model Public School.</h2>
+            <div className="text-muted-foreground mb-6 space-y-3">
+              <p className="font-bold text-primary">
+                Managed By: Dishari Educational Welfare Foundation (Govt. Reg. No: 1901-00189/2025)
+              </p>
+              <p>
+                Rosemary Model Public School is a Bengali and English medium institution dedicated to quality education with modern teaching methods. The school provides a safe and nurturing environment for students from Nursery to Class X.
+              </p>
+            </div>
 
             <div className="space-y-4 mb-6">
               <div className="flex gap-4 items-start">

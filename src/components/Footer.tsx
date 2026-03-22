@@ -51,7 +51,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="font-heading font-bold text-lg mb-4">Quick Links</h4>
-            {["About Us", "Our Courses", "Our Teachers", "Contact Us", "Latest News"].map(
+            {["About Us", "Academic Structure", "Facilities", "Contact Us", "Latest News"].map(
               (link) => (
                 <a
                   key={link}
@@ -66,8 +66,8 @@ const Footer = () => {
 
           {/* Courses */}
           <div>
-            <h4 className="font-heading font-bold text-lg mb-4">Our Courses</h4>
-            {["Acting And Drama", "Art And Design", "Biology & Conservation", "Health Administration", "Accounting & Finance"].map(
+            <h4 className="font-heading font-bold text-lg mb-4">Classes Offered</h4>
+            {["Nursery", "LKG & UKG", "Class I to IV (CBSE)", "Class V to VIII", "Class IX & X (WBBSE)"].map(
               (course) => (
                 <a
                   key={course}
@@ -83,18 +83,21 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h4 className="font-heading font-bold text-lg mb-4">Contact Us</h4>
-            <div className="space-y-4 text-sm">
+            <div className="space-y-4 text-sm mt-4">
               <div className="flex gap-3 items-start">
                 <MapPin className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                <span className="text-dark-foreground/70">Islampur, uttar dinajpur , westbengal, india</span>
+                <span className="text-dark-foreground/70">Near Ramganj Bus Stand, NH-31, Vill + PO: Ramganj, PS: Islampur, Uttar Dinajpur, PIN: 733207</span>
               </div>
               <div className="flex gap-3 items-start">
                 <Phone className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                <span className="text-dark-foreground/70">+919932239526</span>
+                <div className="flex flex-col">
+                  <span className="text-dark-foreground/70">Director: 9932239526</span>
+                  <span className="text-dark-foreground/70">Office: 9932010253</span>
+                </div>
               </div>
               <div className="flex gap-3 items-start">
                 <Mail className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                <span className="text-dark-foreground/70">rosemerrymodelpublicschool@gmail.com</span>
+                <span className="text-dark-foreground/70">rosemary2025ramganj@gmail.com</span>
               </div>
             </div>
           </div>
