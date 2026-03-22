@@ -28,9 +28,9 @@ const AboutSection = () => {
             <span className="section-title">About Us</span>
             <h2 className="section-heading">Our Education System Inspires You More.</h2>
             <p className="text-muted-foreground mb-6">
-              We provide comprehensive education programs designed to nurture talent,
-              build character, and prepare students for a successful future in an
-              ever-changing world.
+              Run by Dishari Educational Welfare Foundation (Govt. Reg. No 1901-00189/2025). 
+              We provide comprehensive education programs from Nursery to Class X designed to nurture talent,
+              build character, and prepare students for a successful future.
             </p>
 
             <div className="space-y-4 mb-6">

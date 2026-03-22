@@ -7,11 +7,15 @@ const TopBar = () => {
         <div className="flex items-center gap-3">
           <span className="text-sm text-muted-foreground hidden sm:inline">Follow Us:</span>
           <div className="flex gap-2">
-            {[Facebook, Instagram, Youtube].map((Icon, i) => (
-              <a key={i} href="#" className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary transition-colors">
-                <Icon className="w-3.5 h-3.5" />
+              <a href="https://www.facebook.com/rosemary2025ramganj" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary transition-colors">
+                <Facebook className="w-3.5 h-3.5" />
               </a>
-            ))}
+              <a href="https://www.instagram.com/rosemary2025ramganj" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary transition-colors">
+                <Instagram className="w-3.5 h-3.5" />
+              </a>
+              <a href="#" className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary transition-colors">
+                <Youtube className="w-3.5 h-3.5" />
+              </a>
           </div>
         </div>
         <div className="hidden md:flex items-center gap-6 text-sm">
