@@ -1,14 +1,21 @@
 import { BookOpen, Globe, ArrowRight, Phone } from "lucide-react";
-import about1 from "@/assets/about-1.jpg";
-import about2 from "@/assets/about-2.jpg";
+import { motion } from "framer-motion";
+import about1 from "@/assets/about-1-indian.jpg";
+import about2 from "@/assets/about-2-indian.jpg";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-20 overflow-hidden">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Images */}
-          <div className="relative">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, type: "spring" }}
+            viewport={{ once: true, margin: "-100px" }}
+            className="relative"
+          >
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <img src={about1} alt="Library" className="rounded-lg w-full h-64 object-cover" />
@@ -21,10 +28,15 @@ const AboutSection = () => {
                 <img src={about2} alt="Students" className="rounded-lg w-full h-80 object-cover" />
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Content */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, type: "spring", delay: 0.2 }}
+            viewport={{ once: true, margin: "-100px" }}
+          >
             <span className="section-title">About Us</span>
             <h2 className="section-heading">Welcome to Rosemary Model Public School.</h2>
             <div className="text-muted-foreground mb-6 space-y-3">
@@ -85,7 +97,7 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

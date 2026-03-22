@@ -1,7 +1,8 @@
 import { Clock, Users, Star, ArrowRight } from "lucide-react";
-import course1 from "@/assets/course-1.jpg";
-import course2 from "@/assets/course-2.jpg";
-import course3 from "@/assets/course-3.jpg";
+import { motion } from "framer-motion";
+import course1 from "@/assets/course-1-indian.jpg";
+import course2 from "@/assets/course-2-indian.jpg";
+import course3 from "@/assets/course-3.jpg"; // Keeping unused import for safety if it was referenced
 
 const courses = [
   { img: course1, category: "Foundation", title: "Nursery to Class IV", lessons: "All Subjects", rating: 5.0, seats: "Open", years: "CBSE Pattern", price: "Free Admission" },
@@ -10,19 +11,32 @@ const courses = [
 
 const CoursesSection = () => {
   return (
-    <section id="courses" className="py-20 bg-section-bg">
+    <section id="courses" className="py-20 bg-section-bg overflow-hidden">
       <div className="container">
-        <div className="text-center mb-12">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
           <span className="section-title">Classes Offered</span>
           <h2 className="section-heading">Our Academic Structure</h2>
           <p className="section-desc">
             We offer a comprehensive academic progression from early childhood through secondary education, ensuring a seamless and enriching learning journey.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {courses.map((c, i) => (
-            <div key={i} className="bg-background rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
+            <motion.div 
+              key={i} 
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: i * 0.2, type: "spring" }}
+              viewport={{ once: true }}
+              className="bg-background rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow group flex flex-col"
+            >
               <div className="relative">
                 <img src={c.img} alt={c.title} className="w-full h-52 object-cover" />
                 <span className="absolute top-4 left-4 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded">
@@ -54,7 +68,7 @@ const CoursesSection = () => {
                   <span className="text-base font-bold text-secondary bg-secondary/10 px-3 py-1 rounded">{c.price}</span>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
